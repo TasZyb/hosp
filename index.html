@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Med Expert</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     
@@ -55,8 +60,11 @@
         
             <div class="news">
                 <div class="container">
-                    <swiper-container class="swiper">
-                        <swiper-slide>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
                             <article class="news__artile" style="background-image: url(img/all.jpg);">
                                 <div class="article__cont">
                                     <h2>Наші працівники</h2>
@@ -64,8 +72,8 @@
                                 </div>
                                 <div class="news__back gray"></div>
                             </article>
-                        </swiper-slide>
-                        <swiper-slide>
+                          </div>
+                          <div class="swiper-slide">
                             <article class="news__artile" style="background-image: url(img/house.JPG);">
                                 <div class="article__cont">
                                     <h2>Це ми</h2>
@@ -75,8 +83,8 @@
                                 <div class="news__back gray"></div>
                                 
                             </article>
-                        </swiper-slide>
-                        <swiper-slide>
+                          </div>
+                          <div class="swiper-slide">
                             <article class="news__artile"  style="background-image: url(img/slide6.jpg);">
                                 <div class="article__cont">
                                     <h2></h2>
@@ -85,8 +93,8 @@
                                 </div>
                                 <div class="news__back gray"></div>
                             </article>
-                        </swiper-slide>
-                        <swiper-slide>
+                        </div>
+                          <div class="swiper-slide">
                             <article class="news__artile"  style="background-image: url(img/slide3.jpg);">
                                 <div class="article__cont">
                                     <h2></h2>
@@ -95,8 +103,8 @@
                                 </div>
                                 <div class="news__back gray"></div>
                             </article>
-                        </swiper-slide>
-                        <swiper-slide>
+                        </div>
+                          <div class="swiper-slide">
                             <article class="news__artile"  style="background-image: url(img/slide5.jpg);     background-position: top;">
                                 <div class="article__cont">
                                     <h2></h2>
@@ -105,45 +113,21 @@
                                 </div>
                                 <div class="news__back gray"></div>
                             </article>
-                        </swiper-slide>
-                      </swiper-container>
-                    <!-- <div class="news__contain">
-                        <div class="news__rows">
-                            <article class="news__artile">
-                                
-                                <h2>Наші працівники</h2>
-                                <a href="doctors/doctors.html" class="news__link">Читати більше...</a>
-                                <div class="news__back gray"></div>
-                            </article>
-                            <article class="news__artile">
-                                <h2>Це ми</h2>
-                                <a href="#anchor" class="news__link">Подивитись де ми...</a>
-                                <div class="news__back gray"></div>
-                            </article> -->
-                            <!-- <article class="news__artile">
-                                <h2>Це ми</h2>
-                                <a href="#anchor" class="news__link">Подивитись де ми...</a>
-                                <div class="news__back gray"></div>
-                            </article>
-                            <article class="news__artile">
-                                <h2>Це ми</h2>
-                                <a href="#anchor" class="news__link">Подивитись де ми...</a>
-                                <div class="news__back gray"></div>
-                            </article> -->
-                        <!-- </div> -->
-                    </div>
-                    <!-- <div class="news__nav">
-                        <button class="news__prev"></button>
-                        <button class="news__next"></button>
-                    </div> -->
+                        </div>
+                          
+                        </div>
 
+                        <div class="swiper-pagination"></div>
 
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+         
+                        <div class="swiper-scrollbar"></div>
+                      </div>
 
-
-
-
-                <!-- </div> -->
+                </div>
             </div>
+            
             <div class="faq">
                 
                 <div class="container">
@@ -167,7 +151,7 @@
                                     <div class="price">600 грн</div>
                                 </div>
                                 <div class="table__dodat">
-                                    <div class="inf">Простати + сечовий міхур (трансректально)</div>
+                                    <div class="inf">Простата + сечовий міхур (трансректально)</div>
                                     <div class="price">450 грн</div>
                                 </div>
                                 <div class="table__dodat">
@@ -184,9 +168,11 @@
                                     <div class="price"></div>
                                 </div>
                                 <div class="table__dodat">
-                                    <div class="inf">Дуплексне сканування судин + консультація флеболога </div>
-                                    <div class="price">900 грн</div>
+                                    <div class="inf"> Дуплексне сканування судин шиї
+                                        (Гілки дуги аорти)</div>
+                                    <div class="price">400 грн</div>
                                 </div>
+                                
                                
                                 <div class="table__dodat">
                                     <div class="inf">Дуплексне сканування судин
@@ -198,9 +184,8 @@
                                     <div class="price">600 грн</div>
                                 </div>
                                 <div class="table__dodat">
-                                    <div class="inf"> Дуплексне сканування судин шиї
-                                        (Гілки дуги аорти)</div>
-                                    <div class="price">400 грн</div>
+                                    <div class="inf">Дуплексне сканування судин + консультація флеболога </div>
+                                    <div class="price">900 грн</div>
                                 </div>
                                
                             </div>
@@ -291,7 +276,7 @@
                         <div class="price">500 грн</div>
                     </div>
                     <div class="table green">
-                        <div class="inf">Комплекс флебологія: консультація хірурга флеболога + дуплексне сканування судин</div>
+                        <div class="inf">Комплекс "Флебологія": консультація хірурга флеболога + дуплексне сканування судин</div>
                         <div class="price">900 грн</div>
                     </div>
                 </div>
@@ -381,7 +366,9 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="slide.js"></script>
     <script src="script.js"></script>
     <script src="map.js"></script>
     <script async
